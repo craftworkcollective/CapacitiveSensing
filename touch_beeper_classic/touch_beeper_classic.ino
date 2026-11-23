@@ -34,7 +34,7 @@ uint16_t readPad(int i) {
 
 // Measure each pad's resting value (don't touch anything!)
 void calibrate() {
-  if (!PLOTTER_MODE) Serial.println("C");          // tell the web page we're measuring
+  if (!PLOTTER_MODE) Serial.println("C");          // tell the Python script we're measuring
   CircuitPlayground.clearPixels();
   CircuitPlayground.setPixelColor(2, 0, 0, 255);   // blue = measuring
 

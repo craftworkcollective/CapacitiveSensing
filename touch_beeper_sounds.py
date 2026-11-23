@@ -107,7 +107,7 @@ try:
 except serial.SerialException as e:
     sys.exit(f"Couldn't open {port}: {e}\nIs the Arduino Serial Monitor still open?")
 
-print(f"Touch Beeper sounds, version 7. Connected to {port}.")
+print(f"Touch Beeper sounds. Connected to {port}.")
 print("Playing a test beep... if you don't hear it, check the laptop's volume and speaker.")
 play(0, 440, 300, 100)
 print("Bring your hand close to a pad. Press button A on the board to check it's talking. (Ctrl+C to stop)")
